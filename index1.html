@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page with Form and To-Do List</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+<header class="nav">
+    <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#todo">To-Do List</a></li>
+        </ul>
+      </nav>
+    <h1>Tasty ICE-cream</h1>
+    <p>At our ice cream parlor, we believe every scoop should be an escape into a world of pure bliss. From the creamy texture of classic vanilla to the bold, unique taste of our handcrafted, small-batch flavors, each spoonful is made to delight.
+        Explore our range:Classic Flavors, Reimagined: Dive into the richness of chocolate, the velvety smoothness of vanilla, or the nostalgic sweetness of strawberry. Simple, timeless, and absolutely delicious.
+        Unique & Gourmet Creations: Taste beyond the ordinary with flavors like Salted Caramel Pretzel Crunch, Lavender Honey, or Matcha Green Tea. Crafted with premium ingredients, these flavors take ice cream to a whole new level.
+        Dairy-Free & Vegan Delights: We believe everyone deserves the joy of ice cream! Try our plant-based flavors, made with creamy coconut, almond, or oat milk for a rich, dairy-free treat that doesn’t skimp on flavor.
+        Handcrafted Quality, Just for You Each batch is made with love, passion, and the finest ingredients, so you can savor freshness and quality in every bite. Our team of artisans carefully crafts every flavor to ensure it’s bursting with taste, aroma, and a texture that melts perfectly in your mouth.Create Your Dream Sundae Why stop at just one scoop? Choose from a variety of gourmet toppings—from crispy waffle cone pieces to rich chocolate drizzle and fresh fruits—to create your own masterpiece. Sweet, savory, crunchy, or creamy, the perfect sundae awaits you!
+        Seasonal Specialties Get ready for a new taste adventure each season. We rotate our flavors to bring you the best of every season, with fresh fruits in summer, cozy spices in fall, and holiday-inspired delights in winter. Discover something new with each visit!
+        Come by, treat yourself, and let us scoop up some happiness just for you. Whether you're a classic vanilla lover or an adventurous flavor seeker, we have something special for everyone.
+        </p>
+  <img src="http://cdn.wallpapersafari.com/14/95/WDHK3T.jpg" alt="Placeholder Image" width="450" height="200">
+  <img src="https://www.wallpapertip.com/wmimgs/89-892560_ice-cream-images-hd.jpg" alt="Placeholder Image" width="450" height="200">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.gpKSBg_Ovx9P94XcX4yTBgHaE8&pid=Api&P=0&h=180" alt="Placeholder Image" width="450" height="200">
+  </header>
+
+  <!-- Contact Form Section -->
+<section id="contact" class="grid-container">
+  <h2>Contact Form</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+  <div id="formMessage"></div>
+</section>
+
+
+  <!-- To-Do List Section -->
+  <section id="todo" class="grid-container">
+    <h2>To-Do List</h2>
+    <div id="todoApp">
+      <input type="text" id="todoInput" placeholder="Enter a new task">
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="todoList"></ul>
+    </div>
+  </section>
+
+  <script src="task.js"></script>
+</body>
+</html>
